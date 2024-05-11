@@ -1,0 +1,199 @@
+body {
+  background-color: #36474e;
+  font-family: 'Comfortaa', cursive;
+  /* font-family: Segoe UI, Helvetica, Arial, sans-serif; */
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  margin: 0 auto; /* auto is what's filling the left/right background */
+  width: 1200px;
+  border: 2px solid black;
+  padding-top: 24px;
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  /* text-transform: uppercase; */
+  box-shadow: 5px 0px 5px black, -5px 0px 10px black; /* x, y, blur, color borders on left and right sides */
+}
+
+header{
+  grid-column: span 12;
+  background-color: #085A4D;
+  color: white;
+  padding-bottom: 24px;
+  font-weight: normal;
+  position: relative; /* Use "position: relative" to help align text vertically */
+  border: 1px solid black;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h1 {
+  margin-left: 78px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+header h2 {
+  margin-left: 147px;
+  margin-top: 0;
+  font-weight: normal;
+  display: inline;
+  /*border: 1px solid black;*/
+}
+
+nav {
+  display: inline-block;
+  text-transform: uppercase;
+  /*border: 1px solid black;*/
+  margin-right: 72px;
+  text-decoration: none;
+  text-align: right;
+  position: absolute; /* Use "position: absolute" to help align text vertically */
+  top: 50px; /* Use "top" to help align text vertically, orginal value was 50px */
+  right: 0;
+}
+
+#homeid {
+  margin-right: 8px;
+  color: white;
+}
+
+#homeid:hover {
+  color: #C0BBFF;
+}
+
+#aboutmeid {
+  margin-right: 8px;
+  color: #C0BBFF;
+}
+
+#aboutmeid:hover {
+  color: #C0BBFF;
+}
+
+header a {
+  text-decoration: none;
+}
+
+
+
+
+/* ------------------main--------------------- */
+main {
+  grid-column: span 12;
+  grid-template-columns: 1fr 2fr; /*splits images into 3 columns*/
+  display: grid;
+  background-color: #f5f5f5; /* white color */
+  border: 1px solid black;
+}
+
+
+/* block level element -> need width? */
+#personalinfoid {
+  display: block;
+  margin-top: 24px;
+  margin-left: 36px;
+}
+
+/* use a different font */
+#personalinfoid p {
+    text-align: left;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px 0 5px 5px;
+    width: 225px;
+    font-size: 14px;
+    margin-left: auto; /* how to center align an image */
+    margin-right: auto; /* how to center align an image */
+}
+
+#pfpimg {
+  border: 3px solid black;
+  display: block;
+  margin-left: auto; /* how to center align an image */
+  margin-right: auto; /* how to center align an image */
+  width: 225px;
+  height: 225px;
+}
+
+/* about me section */
+main h2 {
+  border-bottom: 2px solid black;
+  margin-right: 24px;
+}
+
+/* about me section */
+#aboutmeinfoid {
+  display: block;
+  text-align: left;
+  margin-right: 24px;
+  margin-top: 8px;
+  border: 1px solid #92A2A0; /* light grey bg color */
+}
+
+/* .aboutmeclass {
+  border: 1px solid red;
+} */
+
+#descriptionid {
+  text-transform: none
+}
+
+/* ------------------footer--------------------- */
+footer {
+  grid-column: span 12;
+  background-color: #085A4D;
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 70px;
+  text-shadow: 2px 2px 2px #000;
+  border: 1px solid black;
+}
+
+.email {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 25%;
+}
+
+.resume {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 25%;
+}
+
+
+/* "email" title */
+#emailid {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  /* border: 1px solid black; */
+}
+
+/* "resume" title */
+#resumeid {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.bi-envelope {
+  /* margin-right: 50px; */
+}
+
+footer a{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #C0BBFF;
+}

@@ -1,0 +1,39 @@
+#highlightyellow {
+  background-color: yellow;
+}
+
+#highlightgreen {
+  background-color: green;
+}
+
+.colorgreen {
+  color: green;
+  background-color: lightblue;
+}
+
+h1 {
+  color: #ff0000;
+  background-color: black;
+}
+
+h2 {
+  color: #00ff00;
+  background-color: pink;
+}
+
+h3 {
+  color: brown;
+  background-color: cyan;
+}
+
+a:link {
+ color: red;
+}
+
+a:hover {
+ color: #ffff00;
+}
+
+a:visited {
+ color: green;
+}

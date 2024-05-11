@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Final Girl</title>
+	<link href="project-clickedstylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+	<header>
+		<h1>Dakota Adams</h1>
+		<h2>Game Design Major</h2>
+		<nav>
+			<a id="homeid" href="home.html">Home</a>
+			<a id="aboutmeid" href="aboutme.html">About Me</a>
+	</nav>
+	</header>
+		<h2 id="projecttitle">Final Girl</h2>
+	<main>
+	<span class="img-container"> <!-- Inline parent element -->
+		<img id="projectimg" src="images/FinalGirlGroupPic2.jpg" alt="Final Girl" height=300px>
+</span>
+
+<p>&nbsp &nbsp Welcome to Joyland! A place where happiness thrives! Originally opened in 1958, Joyland has been a place where families have come to re-experience the nostalgia and exhilaration of childhood! Meet our workers: James, Katya, Crystal & Michael. After an exhausting day of plastic smiles and weariness, closing shop feels unusually eerie tonight. Then again, this could be because a psycho killer happens to be hiding in one of the park’s buildings and happens to have cut power to all the exits. Can they find the parts to revive the park’s power and make it out before the killer catches up to them?</p>
+
+<h2 id="moreprojectsid"> More Projects </h2>
+<!-- a carousel with 3 slides -->
+<!-- make sure to change alt tags to proper names -->
+<div id="projectCarousel" class="carousel">
+<!-- images are in .carousel__slide img -->
+<div class="carousel__slide"><a href="zombiegame.html"><img src="images/zombiegame.jpg" alt="Zombie Game"><div class="image__overlay image__overlay--primary"><div class="image__title">Zombie Game</div><p class="image__description"></p>
+</div></a></div>
+<div class="carousel__slide"><a href=FPSshooter.html><img src="images/FPSshooter.jpg" alt="FPS Shooter"><div class="image__overlay image__overlay--primary"><div class="image__title">FPS Shooter</div><p class="image__description"></p>
+</div></a></div>
+<div class="carousel__slide"><a href="#"><img src="images/Placeholder.jpg" alt="Placeholder"><div class="image__overlay image__overlay--primary"><div class="image__title">Placeholder</div><p class="image__description">In Progress</p>
+</div></a></div>
+<div class="carousel__slide"><a href="reflectionprotocol.html"><img src="images/Reflection Protocol.jpg" alt="Reflection Protocol"><div class="image__overlay image__overlay--primary"><div class="image__title">Reflection Protocol</div><p class="image__description">In Progress</p>
+</div></a></div>
+</div>
+
+
+<script>
+const projectCarousel = new Carousel(document.querySelector("#projectCarousel"), {
+		// Your options go here
+		// Try putting the "slidesPerPage" option back in the javacript at the bottom of the page and set it to 1, rather than 3, and see if that helps it layout better. --> success!
+		// initalPage makes the first slide the leftmost slide
+		'slidesPerPage' : 1,
+		'initialPage' : 1
+	});
+</script>
+	</main>
+
+	<footer>
+		<div class="email">
+		<h3 id="emailid">Email</h3>
+		<a class="bi bi-envelope" href="mailto:dwadam2@ilstu.edu"></a> <!-- email -->
+	</div>
+	<div class="resume">
+		<h3 id="resumeid">Resume</h3>
+		<a class="bi bi-file-earmark-person" href="https://illinoisstateuniversity-my.sharepoint.com/:w:/g/personal/dwadam2_ilstu_edu/EYq2nfH7K_hHr3zmqt1seCQBMMP3pIv9BJ-z7IvhQTdAJw?e=pKhUny" target="_blank"></a> <!-- resume -->
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

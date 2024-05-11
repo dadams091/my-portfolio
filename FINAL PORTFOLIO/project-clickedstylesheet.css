@@ -1,0 +1,339 @@
+body {
+  background-color: #36474e;
+  font-family: 'Comfortaa', cursive;
+  /* font-family: Segoe UI, Helvetica, Arial, sans-serif; */
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  margin: 0 auto; /* auto is what's filling the left/right background */
+  width: 1200px;
+  border: 2px solid black;
+  padding-top: 24px;
+  /* background-color: #92A2A0; light grey color */
+  background-color: #f5f5f5;   /* white color */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  /* text-transform: uppercase; */
+  box-shadow: 5px 0px 5px black, -5px 0px 10px black; /* x, y, blur, color borders on left and right sides */
+}
+
+header{
+  grid-column: span 12;
+  background-color: #085A4D;
+  color: white;
+  padding-bottom: 24px;
+  font-weight: normal;
+  position: relative; /* Use "position: relative" to help align text vertically */
+  border: 1px solid black;
+  text-shadow: 2px 2px 2px #000;
+}
+
+h1 {
+  margin-left: 78px;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+header h2 {
+  margin-left: 147px;
+  margin-top: 0;
+  font-weight: normal;
+  display: inline;
+  /*border: 1px solid black;*/
+}
+
+nav {
+  display: inline-block;
+  text-transform: uppercase;
+  /*border: 1px solid black;*/
+  margin-right: 72px;
+  text-decoration: none;
+  text-align: right;
+  position: absolute; /* Use "position: absolute" to help align text vertically */
+  top: 50px; /* Use "top" to help align text vertically, orginal value was 50px */
+  right: 0;
+}
+
+#homeid {
+  margin-right: 8px;
+  color: white;
+}
+
+#homeid:hover {
+  color: #C0BBFF;
+}
+
+#aboutmeid {
+  margin-right: 8px;
+  color: white;
+}
+
+#aboutmeid:hover {
+  color: #C0BBFF;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#projecttitle {
+  grid-column: span 12;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 45px 0;
+  background-color: #0C4646;
+  text-shadow: 2px 2px 2px #000;
+  border: 1px solid black;
+}
+
+main {
+  grid-column: span 12;
+  width: 100%;
+  /* display: grid; */
+  background-color: #f5f5f5;   /* white color */
+  border: 1px solid black;
+}
+
+/* block level element -> need width? */
+.img-container {
+  /* text-align: center; if i want image to be centered*/
+  display: block;
+  margin: 24px 24px 0 24px;
+  padding: 0;
+}
+
+#projectimg {
+  border: 3px solid black;
+  float: left;
+}
+
+/* b { */
+  /* padding: 0 1104px 0 0;
+  margin: 0 24px; */
+  /* border-bottom: 2px solid black;
+  display: inline-block;
+  width = 100%; */
+  /* border: 1px solid black; */
+/* } */
+
+.underline {
+  position: relative;
+}
+
+/* content: ''; makes content visible */
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+#aboutgame {
+  margin-left: 575px;
+  margin-right: 24px;
+  /* border: 1px solid black; */
+}
+
+/* use a different font */
+p {
+  text-align: justify;
+  margin: 24px 24px 0px 24px;
+  font-style: normal;
+  text-transform: none;
+  font-size: 18px;
+  /* border: 1px solid black; */
+}
+ul {
+  /* border: 1px solid black; */
+  margin-left: 24px;
+}
+#moreprojectsid {
+  padding-left: 18px;
+  padding: 18px;
+  margin-bottom: 0;
+  /* opacity: 0.2; */
+
+  /* grid-column: span 12; */
+  font-weight: normal;
+  /* font-size: 18px; */
+  color: black;
+  /* border: 1px solid black; */
+  /* background-color: black; */
+  /* background: rgba(red, green, blue, 0.2); */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* javascript */
+.carousel {
+  color: #170724;
+
+  --carousel-button-bg: #fff;
+  --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0
+          0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+
+#projectCarousel .carousel__slide {
+  display: flex;  /* orignal display value */
+  /* display: block; */
+  align-items: center;
+  justify-content: center;
+  width: 34%; /* does something */
+  height: 350px; /* does something */
+  /* margin-right: 0px;  */
+  /* adjust this to add more slides?, orignally 6 */
+  /* background-color: red; */
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+  /* border-radius: 6px; */
+  /* border: 10px solid red; */
+  border: 5px solid black;
+  border-right: 0px;
+}
+
+/* #projectCarousel {
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+} */
+
+.carousel__slide {
+  /* border: 10px solid red; */
+  /* text-align: center; */
+}
+
+.carousel__slide img {
+  height: 337.474px;
+  padding: 0;
+  margin: 0;
+  /* border: 5px solid black; */
+}
+
+.image {
+	position: relative;
+	width: 396px;
+  border: 2px solid black;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+	background: black;
+}
+
+.image__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 0.6;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.image__description {
+	font-size: 1.25em;
+	margin-top: 0.25em;
+}
+
+
+footer {
+  grid-column: span 12;
+  background-color: #085A4D;
+  color: white;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 70px;
+  text-shadow: 2px 2px 2px #000;
+  border: 1px solid black;
+}
+
+.email {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 25%;
+}
+
+.resume {
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 25%;
+}
+
+
+/* "email" title */
+#emailid {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  /* border: 1px solid black; */
+}
+
+/* "resume" title */
+#resumeid {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.bi-envelope {
+  /* margin-right: 50px; */
+}
+
+footer a{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #C0BBFF;
+}
